@@ -77,9 +77,11 @@
                     <label class="form-label">Select Category</label>
                     <select class="form-select" name="CategoryID" required>
                       <option value="">Select Category</option>
-                      <option value="1">Wedding</option>
-                      <option value="2">Birthday</option>
-                      <option value="3">Corporate</option>
+                     <option value="1">Newborn</option>
+                      <option value="2">Kids</option>
+                      <option value="3">maternity</option>
+                       <option value="4">Family</option>
+
                       <!-- Add dynamic PHP options later -->
                     </select>
                   </div>
@@ -110,13 +112,6 @@
                     <textarea class="form-control" name="Description" rows="3" placeholder="Enter package description" required></textarea>
                   </div>
 
-                  <div class="mb-3">
-                    <label class="form-label">Package Image</label>
-                    <input type="file" class="form-control" name="PackageImage" accept="image/*">
-                    <div class="image-preview mt-2 text-center">
-                      <img src="https://via.placeholder.com/100" alt="Package Preview">
-                    </div>
-                  </div>
 
                   <div class="mb-3">
                     <label class="form-label">Status</label>
@@ -128,7 +123,7 @@
                   </div>
 
                   <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-primary">Add Package</button>
+                    <button type="submit" class="btn btn-primary" name="submit">Add Package</button>
                   </div>
                 </form>
 

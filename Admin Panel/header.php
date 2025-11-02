@@ -5,8 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Admin Dashboard — Soul Frame Studio</title>
-  <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.png" />
-  <link rel="stylesheet" href="./assets/css/styles.min.css" />
+  <link rel="stylesheet" href="css/styles.min.css" />
   <style>
     /* Highlight active link */
     .sidebar-link.active {
@@ -25,20 +24,13 @@
     data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
 
     <!-- App Topstrip -->
-    <div class="app-topstrip bg-dark py-6 px-3 w-100 d-lg-flex align-items-center justify-content-between">
-      <div class="d-flex align-items-center justify-content-center gap-5 mb-2 mb-lg-0">
-        <a class="d-flex justify-content-center" href="#">
-          <img src="assets/images/logos/logo-wrappixel.svg" alt="logo" width="150">
-        </a>
-      </div>
-    </div>
+  
 
     <!-- Sidebar Start -->
     <aside class="left-sidebar">
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./index" class="text-nowrap logo-img">
-            <img src="assets/images/logos/logo.svg" alt="Logo" />
+          <a href="index" class="text-nowrap logo-img">
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-6"></i>
@@ -149,7 +141,7 @@
               </a>
               <ul class="collapse first-level">
                 <li><a href="add_notification" class="sidebar-link"><i class="ti ti-circle"></i>Add Notification</a></li>
-                <li><a href="manage_notifications" class="sidebar-link"><i class="ti ti-circle"></i>Manage Notifications</a></li>
+                <li><a href="manage_notification" class="sidebar-link"><i class="ti ti-circle"></i>Manage Notifications</a></li>
               </ul>
             </li>
 

@@ -72,7 +72,7 @@
               <div class="card-body">
                 <h4 class="card-title mb-4 text-center">Add New Category</h4>
 
-                <form action="#" method="post" enctype="multipart/form-data">
+                <form action="" method="post" enctype="multipart/form-data">
                   <div class="mb-3">
                     <label class="form-label">Category Name</label>
                     <input type="text" class="form-control" name="CategoryName" placeholder="Enter category name" required>
@@ -101,7 +101,7 @@
                   </div>
 
                   <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-primary">Add Category</button>
+                    <button type="submit" name="submit" class="btn btn-primary">Add Category</button>
                   </div>
                 </form>
 

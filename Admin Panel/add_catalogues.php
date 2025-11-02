@@ -77,9 +77,11 @@
                     <label class="form-label">Select Category</label>
                     <select class="form-select" name="CategoryID" required>
                       <option value="">Select Category</option>
-                      <option value="1">Wedding</option>
-                      <option value="2">Birthday</option>
-                      <option value="3">Corporate</option>
+                      <option value="1">Newborn</option>
+                      <option value="2">Kids</option>
+                      <option value="3">maternity</option>
+                       <option value="4">Family</option>
+
                       <!-- Add dynamic PHP options from database later -->
                     </select>
                   </div>
@@ -96,7 +98,7 @@
 
                   <div class="mb-3">
                     <label class="form-label">Catalogue Image</label>
-                    <input type="file" class="form-control" name="ImagePath" accept="image/*">
+                    <input type="file" class="form-control" name="Image" accept="image/*">
                     <div class="image-preview mt-2 text-center">
                       <img src="https://via.placeholder.com/100" alt="Catalogue Preview">
                     </div>
@@ -112,7 +114,7 @@
                   </div>
 
                   <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-primary">Add Catalogue</button>
+                    <button type="submit" class="btn btn-primary" name="submit">Add Catalogue</button>
                   </div>
                 </form>
 

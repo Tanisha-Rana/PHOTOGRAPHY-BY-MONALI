@@ -133,7 +133,7 @@
                   </div>
 
                   <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-primary">Add User</button>
+                    <button type="submit" class="btn btn-primary"  name="submit">Add User</button>
                   </div>
                 </form>
 

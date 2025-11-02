@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Flexy Free Bootstrap Admin Template by WrapPixel</title>
+  <title>Feedback — Admin Panel</title>
   <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="./assets/css/styles.min.css" />
 </head>
 
 <body>
   <!--  Body Wrapper -->
-  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical"
+    data-navbarbg="skin6" data-sidebartype="full"
     data-sidebar-position="fixed" data-header-position="fixed">
 
     <!--  App Topstrip -->
@@ -20,34 +21,70 @@
         <a class="d-flex justify-content-center" href="#">
           <img src="assets/images/logos/logo-wrappixel.svg" alt="" width="150">
         </a>
-
-
       </div>
-
-
-
     </div>
+
     <!-- Sidebar Start -->
     <aside class="left-sidebar">
-      <!-- Sidebar scroll-->
-      <?php
-      include_once('header.php');
-      ?>
+      <?php include_once('header.php'); ?>
+    </aside>
 
+    <!-- Main Content -->
+    <div class="body-wrapper">
+      <div class="container-fluid mt-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title mb-4">Feedback Table</h4>
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped text-center align-middle">
+                <thead class="table-dark">
+                  <tr>
+                    <th>FeedbackID</th>
+                    <th>UserID</th>
+                    <th>BookingID</th>
+                    <th>Rating</th>
+                    <th>Comments</th>
+                    <th>FeedbackDate</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
 
+                  <?php
+                  foreach ($feed_arr as $value) {
+                    ?>
 
-      </a>
+                    <tr>
+                      <td scope="col" class="px-0"><?php echo $value->FeedbackID ?></td>
+                      <td scope="col" class="px-0"><?php echo $value->UserID ?></td>
+                      <td scope="col" class="px-0"><?php echo $value->BookingID ?></td>
+                      <td scope="col" class="px-0"><?php echo $value->Rating ?></td>
+                      <td scope="col" class="px-0"><?php echo $value->Comments ?></td>
+                      <td scope="col" class="px-0"><?php echo $value->FeedbackDate ?></td>
+                      <td scope="col" class="px-0"><?php echo $value->Status ?></td>
+                    </tr>
 
+                  <?php
+                  }
+                  ?>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-      <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="./assets/js/sidebarmenu.js"></script>
-      <script src="./assets/js/app.min.js"></script>
-      <script src="./assets/libs/apexcharts/dist/apexcharts.min.js"></script>
-      <script src="./assets/libs/simplebar/dist/simplebar.js"></script>
-      <script src="./assets/js/dashboard.js"></script>
-      <!-- solar icons -->
-      <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/sidebarmenu.js"></script>
+  <script src="./assets/js/app.min.js"></script>
+  <script src="./assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="./assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="./assets/js/dashboard.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 
 </html>
